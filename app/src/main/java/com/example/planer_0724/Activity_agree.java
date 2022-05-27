@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Activity_agree extends AppCompatActivity {
 
 
-    //회원가입 주의사항 동의 같은거 하는 엑티비티
+    //회원가입 주의사항 동의 같은거 하는 엑티비티 05.27
 
 
     private EditText agree_test;
