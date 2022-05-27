@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/Drawer_Home"
+        android:title="홈화면"
+        android:icon="@drawable/ic_home_24"
+        app:showAsAction="always"
+        />
+
+    <item
+        android:id="@+id/Drawer_News"
+        android:title="뉴스보기검색"
+        android:icon="@drawable/ic_search_30"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/Drawer_Calender"
+        android:title="달력"
+        android:icon="@drawable/ic_baseline_calendar_month_24"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/Drawer_Setting"
+        android:title="설정"
+        android:icon="@drawable/ic_settings_50"
+        app:showAsAction="always"/>
+
+
+
+
+</menu>

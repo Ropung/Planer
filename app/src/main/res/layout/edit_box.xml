@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    >
+
+    <EditText
+        android:id="@+id/box_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="제목 입력"
+        android:inputType="text"
+        />
+
+
+    <EditText
+        android:id="@+id/box_dialog_contents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="내용 입력"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:id="@+id/box_dialog_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="카테고리 설정"
+        android:inputType="text"
+        />
+
+
+    <Spinner
+        android:id="@+id/dialog_spinner"
+        android:entries="@array/카테고리"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="카테고리 설정"
+        android:inputType="text"
+       />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/box_dialog_img_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_pic_add40"
+        />
+
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/box_dialog_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="수정"
+        />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

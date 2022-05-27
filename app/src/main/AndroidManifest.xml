@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.planer_0724"
+    android:exported="false"
+    android:installLocation="preferExternal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".GlobalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:installLocation="preferExternal"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".DetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".News"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="1e0aa47a29e631ce77ebbe127e34ee02" />
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="f557satltt" />
+
+        <activity android:name=".Activity_Map" />
+        <activity android:name=".Activity_Youtube" />
+        <activity android:name=".Activity_set" />
+        <activity android:name=".Activity_agree" />
+        <activity android:name=".Activity_login" />
+        <activity android:name=".Activity_move" />
+        <activity android:name=".Activity_sign" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Activity_intro">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="oauth"
+                    android:scheme="kakao1e0aa47a29e631ce77ebbe127e34ee02" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
